@@ -1,0 +1,12 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+team0:
+  name: team0
+  parent_id: <%= ActiveRecord::FixtureSet.identify(:assignment1) %>
+  type: AssignmentTeam
+
+
+#Teams for course_object_oriented and instructor 1
+Assignment_Project1_Team1:
+  name: Assignment1Team1
+  parent_id: <%= ActiveRecord::FixtureSet.identify(:assignment_project1) %>
+  type: AssignmentTeam

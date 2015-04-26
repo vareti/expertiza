@@ -1,0 +1,21 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+par0:
+  submit_allowed: 1
+  review_allowed: 0
+  user_id: <%= ActiveRecord::FixtureSet.identify(:user5403) %>
+  parent_id: <%= ActiveRecord::FixtureSet.identify(:assignment0) %>
+  topic: Research EPA
+  penalty_accumulated: 0
+  type : AssignmentParticipant
+  handle: "par0"
+  
+par1:
+  submit_allowed: 1
+  review_allowed: 0
+  user_id: <%= ActiveRecord::FixtureSet.identify(:user1) %>
+  parent_id: <%= ActiveRecord::FixtureSet.identify(:assignment0) %>
+  topic: Research EPA
+  penalty_accumulated: 0
+  type : AssignmentParticipant
+  handle: "par1"
+  

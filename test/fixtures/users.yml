@@ -1,0 +1,29 @@
+user5403:
+  name: user5403
+  parent_id: <%= ActiveRecord::FixtureSet.identify(:instructor1) %>
+  fullname: student1_fullname
+ # password: <%= Digest::SHA1.hexdigest("student1") %>
+  password_salt: 
+  email: student1@mailinator.com
+  role_id: <%= ActiveRecord::FixtureSet.identify(:Student_role) %>
+  email_on_review: 1
+  email_on_submission: 1
+  email_on_review: 1
+  master_permission_granted: 1
+  handle: stu1
+  is_new_user: 0
+  
+user1:
+  name: user1
+  parent_id: <%= ActiveRecord::FixtureSet.identify(:instructor1) %>
+  fullname: student1_fullname
+ # password: <%= Digest::SHA1.hexdigest("student1") %>
+  password_salt: 
+  email: student1@mailinator.com
+  role_id: <%= ActiveRecord::FixtureSet.identify(:Student_role) %>
+  email_on_review: 1
+  email_on_submission: 1
+  email_on_review: 1
+  master_permission_granted: 1
+  handle: stu1
+  is_new_user: 0

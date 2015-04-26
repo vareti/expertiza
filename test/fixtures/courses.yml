@@ -1,0 +1,14 @@
+#names : CSC110-4; CSC210-4; CSC310-4; CSC410-4; CSC510-4; CSC610-4
+#instuctor: 
+<% instructor_list = [] %>
+<% instructor_list << ActiveRecord::FixtureSet.identify(:instructor3) %>
+<% instructor_list << ActiveRecord::FixtureSet.identify(:instructor2) %>
+<% instructor_list << ActiveRecord::FixtureSet.identify(:instructor1) %>
+<% for i in 0..10 %>
+course<%= i %>:
+  name: CSC<%= i/5+1%>1<%= i%5 %>
+  instructor_id: <%= instructor_list[i%3] %>
+  directory_path: csc<%= i/5+1%>1<%= i%5 %>
+  info: CSC<%= i/5+1%>1<%= i%5 %> Programming Class
+  private: <%= i%2 %>
+<% end %>
